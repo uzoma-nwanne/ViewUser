@@ -38,7 +38,7 @@ export default function App() {
   //this is triggerd when a user div is clicked
   const handleClick = (e: any)=>{
    const val  = e.currentTarget.getAttribute('data-id')
-   alert(val)
+   setUsers(users.filter((user: User)=>user.name.first != val))
   }
 
 
