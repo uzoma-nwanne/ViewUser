@@ -36,11 +36,9 @@ export default function App() {
   }
  
   //this is triggerd when a user div is clicked
-  const handleClick = (e:any)=>{
-    //this is expected to get the name of the user that was clicked and will be used to filter the user list
-    //unfortunately it returns null
-    const val  = e.target.getAttribute('data-id')
-    alert(val)
+  const handleClick = (e: any)=>{
+   const val  = e.currentTarget.getAttribute('data-id')
+   alert(val)
   }
 
 
